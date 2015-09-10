@@ -13,3 +13,9 @@ dependencies {
 tasks.withType(JavaCompile) { 
     options.compilerArgs << "-Xlint:unchecked" 
 }
+
+task runMainInTest(dependsOn: 'classes', type: JavaExec) {
+    main = 'edu.luc.cs.laufer.cs313.occurences.Main'
+    classpath = sourceSets.test.runtimeClasspath
+    args = []
+}
