@@ -10,20 +10,28 @@
 
 # generated files
 bin/
+build/
 gen/
-proguard_cache/
 target/
-tmp/
 
 # Local configuration file (sdk path, etc)
 local.properties
-.cache/
-.classpath
-.project
-.settings/
-*.iml
-.idea/
 
 # Emacs files
 *~
 \#*\#
+
+# IDEA files
+.idea/
+*.iml
+
+# Eclipse files
+.project
+.classpath
+.settings/
+
+# Gradle
+.gradle/
+
+# Mac files
+*.DS_Store
